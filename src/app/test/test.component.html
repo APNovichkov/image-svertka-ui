@@ -1,0 +1,27 @@
+<p>test works!</p>
+
+<input type="text" [(ngModel)]="name"  />
+
+<br/>
+{{name}}
+
+<br/>
+<button type="button" (click)="resetName()">Reset Name </button>
+<button type="button" (click)="showImages()">Show images </button>
+<button type="button" (click)="toggleImages()">Toggle images </button>
+
+<br/>
+
+
+
+
+
+
+<div *ngIf="flShowImages" >
+    <img  width="100" [src]="imageUrl" alt="">
+    <br/>
+    <div *ngFor="let img of images" >  
+        {{img.name}}: size =  {{img.size}}
+    </div>    
+</div>
+
