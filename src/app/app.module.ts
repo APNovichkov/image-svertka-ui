@@ -7,11 +7,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { DataProviderService } from './data-provider.service';
+import { LoadImageComponent } from './load-image/load-image.component';
+import { ShowImageComponent } from './show-image/show-image.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    TestComponent,
+    LoadImageComponent,
+    ShowImageComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

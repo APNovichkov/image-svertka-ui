@@ -1,0 +1,11 @@
+<div class="text-center">
+    <button type="button" (click)="showImage()" class="btn btn-success mb2">Show Image</button>
+
+    <br><br>
+
+    <div *ngIf="toShowImage">
+        <img width="500" [src]="imageUrl" alt="Image">
+    </div>
+</div>
+
+

@@ -12,7 +12,7 @@ export class DataProviderService {
 
 
   getImageList(): Observable<Response>{
-    return this.http.get( this.baseURL + '/imgs/' );
+    return this.http.get( this.baseURL + '/imgs' );
   }
 
   getImage(imageId: String): Observable<Response>{
